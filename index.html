@@ -3,32 +3,153 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
+  <title>Maryan | Creative Content Creator</title>
   <link href='/style.css' rel='stylesheet'>
 </head>
 <body>
-  <header>
-    <img src="profile.jpg" alt="Profile Picture" width="100">
-    <h1>My Name</h1>
-    <p>Welcome to my personal portfolio website! I am a passionate developer with experience in various technologies.</p>
-  </header>
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-item">
-      <h3>Project 1</h3>
-      <p>Description of project 1.</p>
+  <nav class="main-nav">
+    <div class="container nav-container">
+      <div class="logo">Maryan</div>
+      <div class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#works" class="nav-link">Works</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
     </div>
-    <div class="project-item">
-      <h3>Project 2</h3>
-      <p>Description of project 2.</p>
-    </div>
-  </section>
-  <footer>
-    <p>Contact me at: example@email.com</p>
-    <p>
-      <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Twitter</a>
-    </p>
-  </footer>
+  </nav>
+
+  <div class="container">
+    <header id="home">
+      <div class="banner-image" style="background-image: url('ramadan.jpg');"></div>
+      <img src="maryan.png" alt="Maryan's Profile Picture" class="profile-image">
+      <h1>Maryan</h1>
+      <p class="tagline">Creative Content Creator & Digital Enthusiast</p>
+      <div class="skills">
+        <span class="skill-tag">Photography</span>
+        <span class="skill-tag">Videography</span>
+        <span class="skill-tag">Vlogging</span>
+        <span class="skill-tag">Digital Curation</span>
+      </div>
+    </header>
+
+    <section id="skills" class="section">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Photography</h3>
+          <p>Specializing in urban, portrait, and product photography with a keen eye for detail and composition.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Videography</h3>
+          <p>Creating compelling visual stories through cinematic techniques and professional editing.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Content Creation</h3>
+          <p>Developing engaging content strategies and maintaining consistent brand narratives.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>I'm a passionate creative content creator with a love for visual storytelling. With years of experience in digital media, I specialize in creating compelling content that engages and inspires.</p>
+        <p>My journey in content creation began with a simple camera and a desire to capture moments. Today, I work with brands and individuals to bring their stories to life through various digital mediums.</p>
+      </div>
+    </section>
+
+    <section id="works" class="section">
+      <h2>My Works</h2>
+      <nav class="project-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="photo">Photography</button>
+        <button class="filter-btn" data-filter="video">Videos</button>
+        <button class="filter-btn" data-filter="vlog">Vlogs</button>
+      </nav>
+
+      <div id="projects">
+        <div class="project-item" data-category="photo">
+          <div class="project-image">
+            <img src="https://picsum.photos/300/200" alt="Photography Portfolio">
+          </div>
+          <div class="project-content">
+            <h3>Urban Photography Series</h3>
+            <p>A collection of street photography capturing city life and architecture.</p>
+            <div class="project-tags">
+              <span>Street Photography</span>
+              <span>Urban</span>
+              <span>Architecture</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item" data-category="video">
+          <div class="project-image">
+            <img src="https://picsum.photos/300/201" alt="Video Production">
+          </div>
+          <div class="project-content">
+            <h3>Cinematic Short Films</h3>
+            <p>Professional video production showcasing storytelling through visual narratives.</p>
+            <div class="project-tags">
+              <span>Cinematography</span>
+              <span>Editing</span>
+              <span>Color Grading</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item" data-category="vlog">
+          <div class="project-image">
+            <img src="https://picsum.photos/300/202" alt="Travel Vlog">
+          </div>
+          <div class="project-content">
+            <h3>Travel & Lifestyle Vlogs</h3>
+            <p>Engaging video content sharing travel experiences and lifestyle tips.</p>
+            <div class="project-tags">
+              <span>Travel</span>
+              <span>Lifestyle</span>
+              <span>Content Creation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item" data-category="photo">
+          <div class="project-image">
+            <img src="https://picsum.photos/300/203" alt="Product Photography">
+          </div>
+          <div class="project-content">
+            <h3>Digital Shopping Guides</h3>
+            <p>Curated collections and product photography for digital window shopping enthusiasts.</p>
+            <div class="project-tags">
+              <span>Product Photography</span>
+              <span>Curation</span>
+              <span>Shopping Guides</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="contact-info">
+        <h2>Let's Connect</h2>
+        <p>Looking to collaborate on creative projects or need a content creator?</p>
+        <p class="email">maryan@example.com</p>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">YouTube</a>
+        <a href="#" class="social-link">TikTok</a>
+      </div>
+    </footer>
+  </div>
   <script defer type="text/javascript" src="/main.js"></script>
 </body>
 </html>
